@@ -1,5 +1,7 @@
 # seq_id_generator
 
+Redis TIME指令本身可以返回秒+毫秒+微妙的时间自增组合, 但还是有一定几率会time id重合, 所以加入步长自增. 不仅减少id重合，而且可以分布式多redis实例.
+
 
 ## Usage:
 
