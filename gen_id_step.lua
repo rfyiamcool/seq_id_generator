@@ -3,7 +3,6 @@ local step = ARGV[1];
 local count;
 
 count = tonumber(redis.call('INCRBY', incrKey, step));
---redis.call("set", "kk", count);
 
 if count >= 1000
 then
